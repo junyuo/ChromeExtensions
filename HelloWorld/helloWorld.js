@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Gets query string 
         var queryString = document.getElementById('queryString').value;
 
-        // Create URL with query string
+        // Creates URL with query string
         var newUrl = 'https://www.flickr.com/search/?q='+queryString;
 
         // Creates a new tab.
