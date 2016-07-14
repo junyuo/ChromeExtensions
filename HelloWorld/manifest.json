@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "搜尋Flicker照片",
+  "description": "Flicker Search Extension",
+  "version": "1.0",
+  "permissions": [ "activeTab" ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "helloworld.html",
+    "default_title": "搜尋Flicker照片"
+  }
+}
