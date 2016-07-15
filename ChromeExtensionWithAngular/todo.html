@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="min-width:220px;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello Page</title>
+        <script src="js/angular.min.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        <div ng-app="todoApp" ng-controller="todoController" class="container">
+            <form id='myForm'>
+                <div class="row">
+                    <input type="text" ng-model="task">
+                    <button class="btn btn-primary btn-xs" ng-click="addTask()">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </div>               
+            </form>
+
+            <div class="row">
+                <ul>
+                    <li ng-repeat="t in tasks track by $index">{{ t }} 
+                        <button class="btn btn-default btn-xs" ng-click="deleteTask()">
+                            <i class="glyphicon glyphicon-minus"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </body>
+</html>

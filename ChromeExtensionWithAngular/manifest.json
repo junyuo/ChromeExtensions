@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Build Chrome Extension With AngularJS",
+  "description": "利用 AngularJS 建置 Chrome Extension ",
+  "version": "1.0",
+  "permissions": [ "activeTab" ],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "todo.html",
+    "default_title": "Build Chrome Extension With AngularJS"
+  }
+}
