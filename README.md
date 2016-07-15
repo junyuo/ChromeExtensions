@@ -1,3 +1,3 @@
 # ChromeExtensions
 
-Simple example for building chrome extesion
+Simple examples for building chrome extesion
