@@ -5,7 +5,7 @@ angular.module('todoApp', [])
         
         $scope.addTask = function() {
             if(isNotEmptyOrUndefined($scope.task)){
-                 $scope.tasks.push($scope.task);
+                $scope.tasks.push($scope.task);
                 $scope.task = '';
             } else {
                 alert('task name cannot be null');
@@ -17,7 +17,7 @@ angular.module('todoApp', [])
         }
 
 });
-
+    
 // 檢查是串是否不為空值且不為undefined
 function isNotEmptyOrUndefined(str) {
     return str != '' && !angular.isUndefined(str) && str != null;
