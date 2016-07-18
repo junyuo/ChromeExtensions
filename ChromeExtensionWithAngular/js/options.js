@@ -5,6 +5,7 @@ angular.module('optionsApp', [])
 
       $scope.addInitialTask = function () {
         var initialTask = $scope.initialTask;
+        // Save data using the Chrome extension storage API.
         chrome.storage.sync.set({
           'initialTask' : initialTask
         }, 
@@ -15,6 +16,7 @@ angular.module('optionsApp', [])
 });
 
 function init(){
+  // Get data using the Chrome extension storage API.
   chrome.storage.sync.get(
       'initialTask'
   , function(data) {
